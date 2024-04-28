@@ -1,0 +1,95 @@
+.card-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #da0909; 
+    background-image: linear-gradient(to bottom right, rgba(255,255,255,0.5), rgba(255,255,255,0)); 
+    animation: fadeIn 1s ease-in-out; 
+}
+.card-producto {
+    animation: fadeIn 1s ease-in-out; 
+}
+.card-title {
+    font-family: Jost, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(rgb(3, 190, 166), rgb(3, 212, 240), white);
+    background-clip: text;
+    color: white;
+    -webkit-text-stroke: 8px transparent;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out; 
+}
+
+
+.title-product {
+    font-family: Jost, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(rgb(3, 190, 166), rgb(3, 212, 240), white);
+    background-clip: text;
+    color: white;
+    -webkit-text-stroke: 8px transparent;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out; 
+}
+.card-product {
+    color: rgb(0, 0, 0); 
+    font-family: 'YourCoolFont', sans-serif; 
+    animation: fadeInFromBottom 1s ease-in-out;
+}
+.title-descrption{
+    font-family: Jost, sans-serif;
+    font-weight: bold;
+    background: linear-gradient(rgb(3, 190, 166), rgb(3, 212, 240), white);
+    background-clip: text;
+    color: white;
+    -webkit-text-stroke: 8px transparent;
+    font-size: 20px;
+    margin-bottom: 1px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 1s ease-in-out; 
+}
+
+.card-descrip {
+    color: #000000; 
+    font-family: 'YourBoldFont', sans-serif; 
+    animation: fadeInFromBottom 1s ease-in-out;
+}
+.card-price{
+    font-family: 'YourMoneyFont', sans-serif; 
+    animation: pulseDollar 1s infinite alternate; 
+}
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    50% {
+        opacity: 0.5; 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulseDollar {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
